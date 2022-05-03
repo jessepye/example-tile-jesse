@@ -1,0 +1,28 @@
+name: example
+version: 0+dev.24
+commit_hash: 094ce44
+uncommitted_changes: true
+jobs:
+- name: example
+  version: 5335fea8a5bed4ff2623924b2c08358c73d4c44b9f338673686ba6154b886e8f
+  fingerprint: 5335fea8a5bed4ff2623924b2c08358c73d4c44b9f338673686ba6154b886e8f
+  sha1: sha256:111f474c5dd088cf2cdafbb785e75ab38f1ca1b2c7d9fdcf5693d426fa1a264f
+  packages:
+  - example_package
+- name: example_two
+  version: 387bf485b34746b50be92c9beaeb600a99181b15e0efc87476306a056c784401
+  fingerprint: 387bf485b34746b50be92c9beaeb600a99181b15e0efc87476306a056c784401
+  sha1: sha256:5ff61b223c7cf0e9bf9e1250d931a7ceeda1c076be8953812fb8ef6679210ac0
+  packages:
+  - example_two_package
+packages:
+- name: example_package
+  version: e2a7d70ce7d724bb9695805ea164d67e9c4c8af22189a14b776a3e374c3712b4
+  fingerprint: e2a7d70ce7d724bb9695805ea164d67e9c4c8af22189a14b776a3e374c3712b4
+  sha1: sha256:bb2d55a3ca4d6bf0f59f4b36de0f2b9f89f07335d273b20c370ea54d0249d079
+  dependencies: []
+- name: example_two_package
+  version: 87b82fb6b8deb6ec863cf7556288d424d7a4177a9b8ee522fd345d7b5032e593
+  fingerprint: 87b82fb6b8deb6ec863cf7556288d424d7a4177a9b8ee522fd345d7b5032e593
+  sha1: sha256:787dd9c5fe7b826b54986803d85b60e1a026134f303408f42bca262d8da8338b
+  dependencies: []

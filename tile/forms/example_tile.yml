@@ -1,0 +1,8 @@
+name: example_tile
+label: Example Form Config
+description: An example of a form for configs
+property_inputs:
+  - reference: .properties.test_prop
+    label: Test Property
+    placeholder: PLACEHOLDER TEXT
+    description: A test property for examples

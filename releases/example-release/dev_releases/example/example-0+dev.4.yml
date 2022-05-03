@@ -1,0 +1,17 @@
+name: example
+version: 0+dev.4
+commit_hash: "6961434"
+uncommitted_changes: true
+jobs:
+- name: example
+  version: 87db835cda7d80a2eeb2e0e6365f426542d88b0052601e4b4dab6ec2d64cbca1
+  fingerprint: 87db835cda7d80a2eeb2e0e6365f426542d88b0052601e4b4dab6ec2d64cbca1
+  sha1: sha256:3053abb8732dcc3918b4b98a47a4a7b3c5a07db926a65bb8fe7a72c24bfd8bac
+  packages:
+  - example_package
+packages:
+- name: example_package
+  version: e184bbf8d12ca24f68073a8f8528372678305222d0e5e626f35ea506ce4935c7
+  fingerprint: e184bbf8d12ca24f68073a8f8528372678305222d0e5e626f35ea506ce4935c7
+  sha1: sha256:e2a13cbd7811ee9ca0aefa1afffd5b38dd1e9958d8525fa82df8635f93dcf330
+  dependencies: []

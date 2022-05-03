@@ -1,0 +1,46 @@
+---
+resources:
+  - name: resource-tutorial
+    type: git
+    source:
+      uri: git@github.com:ktollivervmw/example-tile.git
+      branch: main
+      private_key: |
+        # Private Key goes here
+
+jobs:
+  - name: job-pass-files
+    public: true
+    plan:
+      - get: resource-tutorial
+        trigger: true
+      - task: create-some-files
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: {repository: busybox}
+
+          inputs:
+            - name: resource-tutorial
+          outputs:
+            - name: some-files
+
+          run:
+            path: /bin/sh
+            args: ["resource-tutorial/ci/task-outputs-to-inputs/create_some_files.sh"]
+
+      - task: show-some-files
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: {repository: busybox}
+
+          inputs:
+            - name: resource-tutorial
+            - name: some-files
+
+          run:
+            path: /bin/sh
+            args: ["resource-tutorial/ci/task-outputs-to-inputs/show_files.sh"]

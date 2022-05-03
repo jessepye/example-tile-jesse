@@ -1,0 +1,4 @@
+name: test_prop
+type: string
+configurable: true
+optional: false

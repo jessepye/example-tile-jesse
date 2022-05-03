@@ -1,0 +1,12 @@
+---
+name: example_two
+templates:
+  config/bpm.yml.erb: "config/bpm.yml"
+  bin/example_two.sh.erb: "bin/example_two.sh"
+
+packages:
+  - example_two_package
+
+releases:
+  - name: bpm
+    version: latest

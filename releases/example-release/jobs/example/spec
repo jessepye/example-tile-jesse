@@ -1,0 +1,11 @@
+---
+name: example
+templates:
+  config/bpm.yml.erb: "config/bpm.yml"
+
+packages:
+  - example_package
+
+releases:
+  - name: bpm
+    version: latest

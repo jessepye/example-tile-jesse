@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -eux
+
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+cp * ${BOSH_INSTALL_TARGET}/bin
+chmod +x ${BOSH_INSTALL_TARGET}/bin/example_two.sh

@@ -1,0 +1,28 @@
+---
+name: example-tile
+icon_image: $( icon )
+label: Example Tile
+description: Example Tile for Learning
+metadata_version: 1.8
+rank: 1
+minimum_version_for_upgrade: $( variable "minimum_version" )
+product_version: $( version )
+
+releases:
+- $( release "example" )
+- $( release "bpm" )
+
+job_types:
+  - $( instance_group "example_tile" )
+
+stemcell_criteria:
+  os: 'ubuntu-xenial'
+  version: $( variable "stemcell_version" )
+  requires_cpi: false
+  enable_patch_security_updates: true
+
+form_types:
+  - $( form "example_tile" )
+
+property_blueprints:
+  - $( property "test_prop" )
